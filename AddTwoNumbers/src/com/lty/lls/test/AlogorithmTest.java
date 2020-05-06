@@ -15,4 +15,16 @@ public class AlogorithmTest {
         System.out.println("------------->耗时：" + (System.currentTimeMillis() - currentTimeMillis));
         System.out.println(resultNode.toString());
     }
+
+    @Test
+    public void alogorithm02(){
+        ListNode listNode1 = new ListNode(2,new ListNode(4,new ListNode(3)));
+        System.out.println(listNode1);
+        ListNode listNode2 = new ListNode(5,new ListNode(6,new ListNode(4)));
+        System.out.println(listNode2);
+        long currentTimeMillis = System.currentTimeMillis();
+        ListNode resultNode = Algorithm.addTwoNumbers02(listNode1, listNode2);
+        System.out.println("------------->耗时：" + (System.currentTimeMillis() - currentTimeMillis));
+        System.out.println(resultNode.toString());
+    }
 }
